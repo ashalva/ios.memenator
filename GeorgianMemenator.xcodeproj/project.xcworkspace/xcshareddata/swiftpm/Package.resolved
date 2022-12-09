@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Applysis",
+        "repositoryURL": "https://github.com/applysis/applysis-ios-sdk",
+        "state": {
+          "branch": null,
+          "revision": "96c8797f2424994c0581e1743db4da05293185d3",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
