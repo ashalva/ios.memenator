@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import GeorgianMemenator
 
 class GeorgianMemenatorTests: XCTestCase {
 
