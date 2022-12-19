@@ -4,7 +4,6 @@
 //
 //  Created by Shalva Avanashvili on 12.01.2021.
 //  Copyright © 2021 Shalva Avanashvili. All rights reserved.
-//
 
 import SwiftUI
 import Foundation
