@@ -60,14 +60,7 @@ struct MainView: View {
                         ) {
                             CategoryRow(category: viewModel.categories[3])
                         }
-                        
-                        
-                        NavigationLink(destination:
-                                        ComingSoonView()
-                        ) {
-                            CategoryRow(category: viewModel.categories[4])
-                        }
-                        
+
                         NavigationLink(destination:
                                         ReferenceView()
                         ) {
