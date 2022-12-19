@@ -12,13 +12,6 @@ import Foundation
 
 class CatStatusCodesViewModel: ObservableObject {
     private var selection: Int = 0
-    let binding = Binding(
-        get: {
-        },
-        set: {
-            
-        }
-    )
     
     @Published private(set) var isImageLoading: Bool = false
     private(set) var imageLoader = ImageLoader()
