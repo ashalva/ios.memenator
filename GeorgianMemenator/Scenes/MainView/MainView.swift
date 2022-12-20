@@ -12,7 +12,6 @@ import Combine
 struct MainView: View {
     @ObservedObject var viewModel: MainViewModel
     
-    private let fbVM = FeedbackViewModel()
     
     var body: some View {
         NavigationView {
@@ -74,13 +73,7 @@ struct MainView: View {
                             CategoryRow(category: viewModel.categories[5])
                         }
                         
-                        NavigationLink(destination:
-                                        FeedbackView(
-                                            viewModel: fbVM
-                                        )
-                        ) {
-                            CategoryRow(category: viewModel.categories[6])
-                        }
+                       
                     }
                 }
                 .frame(

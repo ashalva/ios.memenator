@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,7 +34,6 @@
 		AB406EA125B62B5B00E7753A /* CreateMemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB406EA025B62B5B00E7753A /* CreateMemeViewModel.swift */; };
 		AB406EA625B62C3F00E7753A /* RectGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB406EA525B62C3F00E7753A /* RectGetter.swift */; };
 		AB406EAB25B62CD400E7753A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB406EAA25B62CD400E7753A /* UIView+Extensions.swift */; };
-		AB7B7094262B4F97005771BA /* Applysis in Frameworks */ = {isa = PBXBuildFile; productRef = AB7B7093262B4F97005771BA /* Applysis */; };
 		AB81E39925B0D497005312D8 /* RedditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E39825B0D497005312D8 /* RedditViewModel.swift */; };
 		AB81E39E25B0D49D005312D8 /* RedditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E39D25B0D49D005312D8 /* RedditView.swift */; };
 		AB81E3A425B0D672005312D8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3A325B0D672005312D8 /* ImageLoader.swift */; };
@@ -43,8 +42,6 @@
 		AB81E3B825B0E308005312D8 /* CatStatusCodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3B725B0E308005312D8 /* CatStatusCodesView.swift */; };
 		AB81E3C125B2F8E5005312D8 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3C025B2F8E5005312D8 /* CategoryRow.swift */; };
 		AB81E3C625B2F91F005312D8 /* MemeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3C525B2F91F005312D8 /* MemeCategory.swift */; };
-		ABD6FD0A262AFDDA00C732D4 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6FD09262AFDDA00C732D4 /* FeedbackView.swift */; };
-		ABD6FD12262AFDFB00C732D4 /* FeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6FD11262AFDFB00C732D4 /* FeedbackViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +103,6 @@
 		AB81E3B725B0E308005312D8 /* CatStatusCodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatStatusCodesView.swift; sourceTree = "<group>"; };
 		AB81E3C025B2F8E5005312D8 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		AB81E3C525B2F91F005312D8 /* MemeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCategory.swift; sourceTree = "<group>"; };
-		ABD6FD09262AFDDA00C732D4 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
-		ABD6FD11262AFDFB00C732D4 /* FeedbackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB7B7094262B4F97005771BA /* Applysis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +333,6 @@
 		ABD6FD08262AFDB800C732D4 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
-				ABD6FD09262AFDDA00C732D4 /* FeedbackView.swift */,
-				ABD6FD11262AFDFB00C732D4 /* FeedbackViewModel.swift */,
 			);
 			path = Feedback;
 			sourceTree = "<group>";
@@ -362,7 +354,6 @@
 			);
 			name = GeorgianMemenator;
 			packageProductDependencies = (
-				AB7B7093262B4F97005771BA /* Applysis */,
 			);
 			productName = GeorgianMemenator;
 			productReference = AB31E3DE25AE2F6A00E6B572 /* Memenator.app */;
@@ -437,7 +428,6 @@
 			);
 			mainGroup = AB31E3D525AE2F6900E6B572;
 			packageReferences = (
-				AB7B7092262B4F97005771BA /* XCRemoteSwiftPackageReference "applysis-ios-sdk" */,
 			);
 			productRefGroup = AB31E3DF25AE2F6A00E6B572 /* Products */;
 			projectDirPath = "";
@@ -485,7 +475,6 @@
 				AB406EA125B62B5B00E7753A /* CreateMemeViewModel.swift in Sources */,
 				AB81E3A425B0D672005312D8 /* ImageLoader.swift in Sources */,
 				AB190C9125B0CC6F0067F18C /* GirchiView.swift in Sources */,
-				ABD6FD12262AFDFB00C732D4 /* FeedbackViewModel.swift in Sources */,
 				AB2BCCE725B616F5006B567D /* ImagePicker.swift in Sources */,
 				AB2BCCDE25B61684006B567D /* CreateMemeView.swift in Sources */,
 				AB190C9725B0CCA40067F18C /* RedditService.swift in Sources */,
@@ -512,7 +501,6 @@
 				AB2BCCC225B32E2F006B567D /* ExplainerView.swift in Sources */,
 				AB81E3C125B2F8E5005312D8 /* CategoryRow.swift in Sources */,
 				AB406E9725B619B100E7753A /* Photo+Extensions.swift in Sources */,
-				ABD6FD0A262AFDDA00C732D4 /* FeedbackView.swift in Sources */,
 				AB190C7A25B0CB1E0067F18C /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -846,25 +834,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AB7B7092262B4F97005771BA /* XCRemoteSwiftPackageReference "applysis-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/applysis/applysis-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AB7B7093262B4F97005771BA /* Applysis */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AB7B7092262B4F97005771BA /* XCRemoteSwiftPackageReference "applysis-ios-sdk" */;
-			productName = Applysis;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB31E3D625AE2F6900E6B572 /* Project object */;
 }
