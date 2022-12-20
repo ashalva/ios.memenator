@@ -64,7 +64,7 @@ struct MainView: View {
                         NavigationLink(destination:
                                         ReferenceView()
                         ) {
-                            CategoryRow(category: viewModel.categories[5])
+                            CategoryRow(category: viewModel.categories[4])
                         }
                         
                         NavigationLink(destination:
@@ -72,7 +72,7 @@ struct MainView: View {
                                             viewModel: fbVM
                                         )
                         ) {
-                            CategoryRow(category: viewModel.categories[6])
+                            CategoryRow(category: viewModel.categories[5])
                         }
                     }
                 }
