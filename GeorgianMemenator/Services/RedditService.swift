@@ -23,6 +23,7 @@ class RedditService: RedditServing {
         
         return try! request
             .usingMethod(.GET)
+            .loggingResponse()
             .build()
             .asFuture()
     }
