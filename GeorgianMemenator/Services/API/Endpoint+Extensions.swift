@@ -10,28 +10,17 @@ import Foundation
 import Combine
 
 public extension Endpoint {
-    func asPublisher() -> AnyPublisher<Response, Error> {
-        URLSession
-            .shared
-            .dataTaskPublisher(for: request)
-            .tryMap { result in
-                guard let response = result.response as? HTTPURLResponse,
-                    (200...299).contains(response.statusCode)
-                    else {
-                        throw try self.decoder.decode(APIError.self, from: result.data.valid)
-                }
-                
-                return try self.decoder.decode(Response.self, from: result.data.valid)
-        }
-        .tryCatch(
-            { error -> AnyPublisher<Response, Error> in throw error }
-        ).eraseToAnyPublisher()
-    }
-    
     func asFuture() -> Future<Response, Error> {
         return Future<Response, Error> { promise in
             let task = URLSession.shared.dataTask(with: self.request) { data, response, error in
-                
+                if self.shouldLogResponse == true {
+                    if let data = data {
+                        print("🟥🟥🟥")
+                        print(String(data: data, encoding: String.Encoding.utf8) ?? "")
+                    } else {
+                        print("🟥🟥🟥 Response data not returned")
+                    }
+                }
                 guard error == nil else {
                     promise(.failure(error!))
                     return
@@ -45,7 +34,7 @@ public extension Endpoint {
             task.resume()
         }
     }
-
+    
     func usingDefaultParameters() -> Endpoint {
         usingContentType("application/json")
     }
