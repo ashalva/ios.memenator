@@ -17,7 +17,6 @@
 		AB2BCCC225B32E2F006B567D /* ExplainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BCCC125B32E2F006B567D /* ExplainerView.swift */; };
 		AB2BCCC725B32FA2006B567D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BCCC625B32FA2006B567D /* Color+Extensions.swift */; };
 		AB2BCCCD25B33674006B567D /* ReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BCCCC25B33674006B567D /* ReferenceView.swift */; };
-		AB2BCCD325B33B11006B567D /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BCCD225B33B11006B567D /* ComingSoonView.swift */; };
 		AB2BCCDE25B61684006B567D /* CreateMemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BCCDD25B61684006B567D /* CreateMemeView.swift */; };
 		AB2BCCE725B616F5006B567D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BCCE625B616F5006B567D /* ImagePicker.swift */; };
 		AB31E3E225AE2F6A00E6B572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31E3E125AE2F6A00E6B572 /* AppDelegate.swift */; };
@@ -72,7 +71,6 @@
 		AB2BCCC125B32E2F006B567D /* ExplainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainerView.swift; sourceTree = "<group>"; };
 		AB2BCCC625B32FA2006B567D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		AB2BCCCC25B33674006B567D /* ReferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceView.swift; sourceTree = "<group>"; };
-		AB2BCCD225B33B11006B567D /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
 		AB2BCCDD25B61684006B567D /* CreateMemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemeView.swift; sourceTree = "<group>"; };
 		AB2BCCE625B616F5006B567D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		AB31E3DE25AE2F6A00E6B572 /* Memenator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memenator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,14 +193,6 @@
 			path = Reference;
 			sourceTree = "<group>";
 		};
-		AB2BCCD125B33B07006B567D /* ComingSoon */ = {
-			isa = PBXGroup;
-			children = (
-				AB2BCCD225B33B11006B567D /* ComingSoonView.swift */,
-			);
-			path = ComingSoon;
-			sourceTree = "<group>";
-		};
 		AB2BCCE225B61689006B567D /* Create */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,7 +270,6 @@
 			children = (
 				ABD6FD08262AFDB800C732D4 /* Feedback */,
 				AB2BCCE225B61689006B567D /* Create */,
-				AB2BCCD125B33B07006B567D /* ComingSoon */,
 				AB2BCCCB25B3366A006B567D /* Reference */,
 				AB81E3A825B0D9E0005312D8 /* Common */,
 				AB81E3AE25B0E15E005312D8 /* CatStatusCodes */,
@@ -478,7 +467,6 @@
 				AB2BCCE725B616F5006B567D /* ImagePicker.swift in Sources */,
 				AB2BCCDE25B61684006B567D /* CreateMemeView.swift in Sources */,
 				AB190C9725B0CCA40067F18C /* RedditService.swift in Sources */,
-				AB2BCCD325B33B11006B567D /* ComingSoonView.swift in Sources */,
 				AB81E39E25B0D49D005312D8 /* RedditView.swift in Sources */,
 				AB406EA625B62C3F00E7753A /* RectGetter.swift in Sources */,
 				AB31E3E225AE2F6A00E6B572 /* AppDelegate.swift in Sources */,

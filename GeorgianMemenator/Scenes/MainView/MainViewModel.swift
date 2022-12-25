@@ -17,7 +17,6 @@ class MainViewModel: ObservableObject {
         MemeCategory(title: "Create", icon: Image("add")),
         MemeCategory(title: "Cat status codes", icon: Image("cat")),
         MemeCategory(title: "Girchi", icon: Image("cone")),
-        MemeCategory(title: "9GAG", icon: Image("9gag")),
         MemeCategory(title: "References", icon: Image("hand")),
     ]
     
