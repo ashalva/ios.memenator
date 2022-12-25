@@ -12,8 +12,6 @@ import Combine
 struct MainView: View {
     @ObservedObject var viewModel: MainViewModel
     
-    private let fbVM = FeedbackViewModel()
-    
     var body: some View {
         NavigationView {
             GeometryReader { proxy in
@@ -65,14 +63,6 @@ struct MainView: View {
                                         ReferenceView()
                         ) {
                             CategoryRow(category: viewModel.categories[4])
-                        }
-                        
-                        NavigationLink(destination:
-                                        FeedbackView(
-                                            viewModel: fbVM
-                                        )
-                        ) {
-                            CategoryRow(category: viewModel.categories[5])
                         }
                     }
                 }
