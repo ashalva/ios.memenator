@@ -10,14 +10,14 @@ import Combine
 import Foundation
 
 protocol RedditServing {
-    func getRandomPost() -> Future<RedditPost, Error>
+    func getRandomPost() -> AnyPublisher<RedditPost, Error>
 }
 
 class RedditService: RedditServing {
     private let redditApiUrl = "https://meme-api.com/"
     
-    func getRandomPost() -> Future<RedditPost, Error> {
-        let request = Endpoint<RedditPost>(baseURL: redditApiUrl)
+    func getRandomPost() -> AnyPublisher<RedditPost, Error> {
+        let request = Endpoint<RedditPostDTO>(baseURL: redditApiUrl)
             .appendingPathParameter("gimme")
             .usingDefaultParameters()
         
@@ -25,5 +25,8 @@ class RedditService: RedditServing {
             .usingMethod(.GET)
             .build()
             .asFuture()
+            .compactMap({ RedditPostMapper.toEntity(dto: $0) })
+            .eraseToAnyPublisher()
+
     }
 }

@@ -27,7 +27,7 @@ struct CatStatusCodesView: View {
                     selection: $selection.didSet(execute: { i in viewModel.getStatusCode(for: i)}),
                     label: Text("Status Codes")
                 ) {
-                    ForEach(0 ..< viewModel.statusCodes.count) {
+                    ForEach(0 ..< viewModel.statusCodes.count, id: \.self) {
                         Text(self.viewModel.statusCodes[$0]).tag($0)
                     }
                 }
