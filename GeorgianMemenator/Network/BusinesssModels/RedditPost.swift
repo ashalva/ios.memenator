@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RedditPost: Decodable {
+struct RedditPost {
     let postLink: String
     let subreddit, title: String
     let url: String
