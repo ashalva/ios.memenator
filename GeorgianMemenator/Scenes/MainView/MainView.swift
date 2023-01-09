@@ -67,7 +67,6 @@ struct MainView: View {
                         
                         NavigationLink(destination:
                                         CatTagsListView()
-                                            
                         ) {
                             CategoryRow(category: viewModel.categories[5])
                         }
