@@ -44,6 +44,8 @@
 		AB81E3C625B2F91F005312D8 /* MemeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3C525B2F91F005312D8 /* MemeCategory.swift */; };
 		ABD6FD0A262AFDDA00C732D4 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6FD09262AFDDA00C732D4 /* FeedbackView.swift */; };
 		ABD6FD12262AFDFB00C732D4 /* FeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6FD11262AFDFB00C732D4 /* FeedbackViewModel.swift */; };
+		DA330584296B44B3000FBB0D /* DogBreedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA330583296B44B3000FBB0D /* DogBreedsListView.swift */; };
+		DA330586296B44D3000FBB0D /* DogBreedsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA330585296B44D3000FBB0D /* DogBreedsListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		AB81E3C525B2F91F005312D8 /* MemeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCategory.swift; sourceTree = "<group>"; };
 		ABD6FD09262AFDDA00C732D4 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
 		ABD6FD11262AFDFB00C732D4 /* FeedbackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewModel.swift; sourceTree = "<group>"; };
+		DA330583296B44B3000FBB0D /* DogBreedsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedsListView.swift; sourceTree = "<group>"; };
+		DA330585296B44D3000FBB0D /* DogBreedsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedsListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +283,7 @@
 				AB2BCCCB25B3366A006B567D /* Reference */,
 				AB81E3A825B0D9E0005312D8 /* Common */,
 				AB81E3AE25B0E15E005312D8 /* CatStatusCodes */,
+				DA330587296B44EA000FBB0D /* DogBreedsList */,
 				AB190C8A25B0CC480067F18C /* Reddit */,
 				AB190C8925B0CC420067F18C /* Girchi */,
 				AB190C8825B0CC2B0067F18C /* MainView */,
@@ -332,6 +337,15 @@
 				ABD6FD11262AFDFB00C732D4 /* FeedbackViewModel.swift */,
 			);
 			path = Feedback;
+			sourceTree = "<group>";
+		};
+		DA330587296B44EA000FBB0D /* DogBreedsList */ = {
+			isa = PBXGroup;
+			children = (
+				DA330585296B44D3000FBB0D /* DogBreedsListViewModel.swift */,
+				DA330583296B44B3000FBB0D /* DogBreedsListView.swift */,
+			);
+			path = DogBreedsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,6 +490,7 @@
 				AB190C9125B0CC6F0067F18C /* GirchiView.swift in Sources */,
 				ABD6FD12262AFDFB00C732D4 /* FeedbackViewModel.swift in Sources */,
 				AB2BCCE725B616F5006B567D /* ImagePicker.swift in Sources */,
+				DA330586296B44D3000FBB0D /* DogBreedsListViewModel.swift in Sources */,
 				AB2BCCDE25B61684006B567D /* CreateMemeView.swift in Sources */,
 				AB190C9725B0CCA40067F18C /* RedditService.swift in Sources */,
 				AB81E39E25B0D49D005312D8 /* RedditView.swift in Sources */,
@@ -495,6 +510,7 @@
 				AB2BCCCD25B33674006B567D /* ReferenceView.swift in Sources */,
 				AB81E3B825B0E308005312D8 /* CatStatusCodesView.swift in Sources */,
 				AB81E39925B0D497005312D8 /* RedditViewModel.swift in Sources */,
+				DA330584296B44B3000FBB0D /* DogBreedsListView.swift in Sources */,
 				AB190CA025B0CDDC0067F18C /* RedditPost.swift in Sources */,
 				AB31E41325AE2FD600E6B572 /* MainViewModel.swift in Sources */,
 				AB2BCCC225B32E2F006B567D /* ExplainerView.swift in Sources */,

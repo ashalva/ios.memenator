@@ -61,11 +61,13 @@ struct MainView: View {
                             CategoryRow(category: viewModel.categories[3])
                         }
 
+                        
                         NavigationLink(destination:
                                         ReferenceView()
                         ) {
                             CategoryRow(category: viewModel.categories[4])
                         }
+                       
                         
                         NavigationLink(destination:
                                         FeedbackView(
@@ -74,6 +76,15 @@ struct MainView: View {
                         ) {
                             CategoryRow(category: viewModel.categories[5])
                         }
+                        
+                        
+                        NavigationLink(destination:
+                                        DogBreedsListView()
+                                           
+                        ) {
+                            CategoryRow(category: viewModel.categories[6])
+                        }
+                        
                     }
                 }
                 .frame(
