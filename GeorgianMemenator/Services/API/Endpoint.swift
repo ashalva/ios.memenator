@@ -18,7 +18,8 @@ public final class Endpoint<Response: Decodable> {
     private var queryItems: [Pair] = []
     private var method: RequestMethod = .POST
     private var httpBody: Data? = nil
-    
+
+    public private(set) var shouldLogResponse: Bool = false
     public private(set) var encoder = JSONEncoder()
     public private(set) var decoder = JSONDecoder()
     private(set) var request: URLRequest!
@@ -112,6 +113,12 @@ public final class Endpoint<Response: Decodable> {
     @discardableResult
     public func usingDateDecodingStrategy(_ formatter: DateFormatter) -> Endpoint {
         decoder.dateDecodingStrategy = .formatted(formatter)
+        return self
+    }
+
+    @discardableResult
+    public func loggingResponse() -> Endpoint {
+        shouldLogResponse = true
         return self
     }
     
