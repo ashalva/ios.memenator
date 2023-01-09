@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EAD231A296C3C11005213DB /* CatTagsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD2319296C3C11005213DB /* CatTagsListViewModel.swift */; };
+		0EAD231C296C3C26005213DB /* CatTagsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD231B296C3C26005213DB /* CatTagsListView.swift */; };
 		AB190C7A25B0CB1E0067F18C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB190C7925B0CB1E0067F18C /* Endpoint.swift */; };
 		AB190C7F25B0CB590067F18C /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB190C7E25B0CB590067F18C /* Structures.swift */; };
 		AB190C8425B0CBAD0067F18C /* Endpoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB190C8325B0CBAD0067F18C /* Endpoint+Extensions.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EAD2319296C3C11005213DB /* CatTagsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTagsListViewModel.swift; sourceTree = "<group>"; };
+		0EAD231B296C3C26005213DB /* CatTagsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTagsListView.swift; sourceTree = "<group>"; };
 		AB190C7925B0CB1E0067F18C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		AB190C7E25B0CB590067F18C /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
 		AB190C8325B0CBAD0067F18C /* Endpoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Extensions.swift"; sourceTree = "<group>"; };
@@ -128,6 +132,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EAD2317296C3BE0005213DB /* CatTagsList */ = {
+			isa = PBXGroup;
+			children = (
+				0EAD2319296C3C11005213DB /* CatTagsListViewModel.swift */,
+				0EAD231B296C3C26005213DB /* CatTagsListView.swift */,
+			);
+			path = CatTagsList;
+			sourceTree = "<group>";
+		};
 		AB190C7225B0CAD30067F18C /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,7 +281,7 @@
 		AB31E41125AE2FA500E6B572 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				ABD6FD08262AFDB800C732D4 /* Feedback */,
+				0EAD2317296C3BE0005213DB /* CatTagsList */,
 				AB2BCCE225B61689006B567D /* Create */,
 				AB2BCCCB25B3366A006B567D /* Reference */,
 				AB81E3A825B0D9E0005312D8 /* Common */,
@@ -317,13 +330,6 @@
 				AB81E3C025B2F8E5005312D8 /* CategoryRow.swift */,
 			);
 			path = CategoryRow;
-			sourceTree = "<group>";
-		};
-		ABD6FD08262AFDB800C732D4 /* Feedback */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Feedback;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,6 +473,7 @@
 				AB2BCCE725B616F5006B567D /* ImagePicker.swift in Sources */,
 				AB2BCCDE25B61684006B567D /* CreateMemeView.swift in Sources */,
 				AB190C9725B0CCA40067F18C /* RedditService.swift in Sources */,
+				0EAD231A296C3C11005213DB /* CatTagsListViewModel.swift in Sources */,
 				AB81E39E25B0D49D005312D8 /* RedditView.swift in Sources */,
 				AB406EA625B62C3F00E7753A /* RectGetter.swift in Sources */,
 				AB31E3E225AE2F6A00E6B572 /* AppDelegate.swift in Sources */,
@@ -478,6 +485,7 @@
 				AB81E3AA25B0D9F5005312D8 /* ActivityIndicatorView.swift in Sources */,
 				AB190C8C25B0CC5E0067F18C /* GirchiViewModel.swift in Sources */,
 				AB31E3E425AE2F6A00E6B572 /* SceneDelegate.swift in Sources */,
+				0EAD231C296C3C26005213DB /* CatTagsListView.swift in Sources */,
 				AB2BCCC725B32FA2006B567D /* Color+Extensions.swift in Sources */,
 				AB190C8425B0CBAD0067F18C /* Endpoint+Extensions.swift in Sources */,
 				AB31E3E625AE2F6A00E6B572 /* MainView.swift in Sources */,
