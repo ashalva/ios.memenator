@@ -66,7 +66,9 @@ struct MainView: View {
                         }
                         
                         NavigationLink(destination:
-                                        CatTagsListView()
+                                        CatTagsListView(
+                                       viewModel: CatTagsListViewModel()
+                                       )
                         ) {
                             CategoryRow(category: viewModel.categories[5])
                         }

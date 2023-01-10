@@ -9,14 +9,14 @@
 import SwiftUI
 import Foundation
 
-struct CatTagsListViewModel: View {
+class CatTagsListViewModel: ObservableObject {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct CatTagsListViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        CatTagsListViewModel()
-    }
-}
+//class CatTagsListViewModel_Previews: PreviewProvider {
+    //static var previews: some ObservableObject {
+      //  CatTagsListViewModel()
+   // }
+//}
