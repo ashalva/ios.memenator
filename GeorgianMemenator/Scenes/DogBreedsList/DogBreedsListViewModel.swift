@@ -10,17 +10,10 @@ import SwiftUI
 import Foundation
 
 class DogBreedsListViewModel: ObservableObject {
-    var body: some View {
-        EmptyView()
+    
         
     }
-}
 
-struct DogBreedsListViewModel_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        DogBreedsListView(viewModel: DogBreedsListViewModel())
-    }
-}
+
 
 
