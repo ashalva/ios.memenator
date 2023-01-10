@@ -10,15 +10,16 @@ import SwiftUI
 import Foundation
 
 struct DogBreedsListView: View {
+    @ObservedObject var viewModel: DogBreedsListViewModel
     var body: some View {
         EmptyView()
+        
+        Image(systemName: "dog")
     }
 }
 
 struct DogBreedsListView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(
-            viewModel: MainViewModel()
-        )
+        DogBreedsListView(viewModel: DogBreedsListViewModel())
     }
 }

@@ -67,7 +67,7 @@ struct MainView: View {
                         }
                         
                         NavigationLink(destination:
-                                        DogBreedsListView()
+                                        DogBreedsListView(viewModel: DogBreedsListViewModel())
                                            
                         ) {
                             CategoryRow(category: viewModel.categories[5])
