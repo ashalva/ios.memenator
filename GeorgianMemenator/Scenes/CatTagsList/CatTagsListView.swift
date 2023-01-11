@@ -19,9 +19,7 @@ struct CatTagsListView: View {
 
 struct CatTagsListView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(
-            viewModel: MainViewModel()
-        )
+        CatTagsListView(viewModel: CatTagsListViewModel())
             
     }
 }

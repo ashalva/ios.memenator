@@ -10,13 +10,5 @@ import SwiftUI
 import Foundation
 
 class CatTagsListViewModel: ObservableObject {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+    
 }
-
-//class CatTagsListViewModel_Previews: PreviewProvider {
-    //static var previews: some ObservableObject {
-      //  CatTagsListViewModel()
-   // }
-//}
