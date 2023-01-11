@@ -11,9 +11,4 @@ import Foundation
 
 class DogBreedsListViewModel: ObservableObject {
     
-        
     }
-
-
-
-

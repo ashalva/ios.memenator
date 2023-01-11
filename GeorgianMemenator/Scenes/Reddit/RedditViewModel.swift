@@ -9,7 +9,6 @@
 import Combine
 import Foundation
 
-
 class RedditViewModel: ObservableObject {
     private let redditService: RedditServing
     
