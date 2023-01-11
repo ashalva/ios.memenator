@@ -9,7 +9,6 @@
 import SwiftUI
 import Foundation
 
-
 struct RedditView: View {
     @State var image: UIImage = UIImage()
     @ObservedObject var viewModel: RedditViewModel
