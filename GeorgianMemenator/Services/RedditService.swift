@@ -14,7 +14,7 @@ protocol RedditServing {
 }
 
 class RedditService: RedditServing {
-    private let redditApiUrl = "https://meme-api.herokuapp.com/"
+    private let redditApiUrl = "https://meme-api.com/"
     
     func getRandomPost() -> Future<RedditPost, Error> {
         let request = Endpoint<RedditPost>(baseURL: redditApiUrl)
