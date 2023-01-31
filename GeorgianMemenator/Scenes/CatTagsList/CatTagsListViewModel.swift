@@ -14,8 +14,7 @@ class CatTagsListViewModel: ObservableObject {
         CatTagDetail(uniqueID: 0, name: "Sphynx cat"),
         CatTagDetail(uniqueID: 1, name: "Munchkin cat"),
         CatTagDetail(uniqueID: 2, name: "Bengal cat")
-        ]
-    
+    ]
 }
 
 

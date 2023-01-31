@@ -11,5 +11,4 @@ import Foundation
 struct CatTagDetail {
     var uniqueID: Int
     var name: String
-   
 }

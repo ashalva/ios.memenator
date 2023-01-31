@@ -16,7 +16,6 @@ struct CatTagsListView: View {
         List(viewModel.tags, id: \.uniqueID) { tag in
             Text(tag.name)
         }
-        
     }
 }
 
