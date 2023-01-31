@@ -13,7 +13,7 @@ struct CatTagsListView: View {
     @ObservedObject var viewModel: CatTagsListViewModel
     
     var body: some View {
-        List(viewModel.tags, id: \.uniqueID) { tag in
+        List(viewModel.tags) { tag in
             Text(tag.name)
         }
     }
