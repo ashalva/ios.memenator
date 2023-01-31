@@ -14,8 +14,8 @@ class CatTagsListViewModel: ObservableObject {
 }
 
 var tags: [CatTagDetail] = [
-    CatTagDetail(uniqueID: 0, name: "TTTTT"),
-    CatTagDetail(uniqueID: 1, name: "GGGGG"),
-    CatTagDetail(uniqueID: 2, name: "FFFFF")
+    CatTagDetail(uniqueID: 0, name: "Sphynx cat"),
+    CatTagDetail(uniqueID: 1, name: "Munchkin cat"),
+    CatTagDetail(uniqueID: 2, name: "Bengal cat")
     
 ]
