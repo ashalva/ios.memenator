@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct CatTagDetail {
     var uniqueID: Int
