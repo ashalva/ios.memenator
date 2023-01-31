@@ -13,9 +13,13 @@ struct CatTagsListView: View {
     @ObservedObject var viewModel: CatTagsListViewModel
     
     var body: some View {
-        EmptyView()
+        List(tags, id: \.uniqueID) { tag in
+            Text(tag.name)
+        }
+        
     }
 }
+
 
 struct CatTagsListView_Previews: PreviewProvider {
     static var previews: some View {

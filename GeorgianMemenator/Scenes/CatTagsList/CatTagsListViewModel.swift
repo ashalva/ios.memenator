@@ -12,3 +12,10 @@ import Foundation
 class CatTagsListViewModel: ObservableObject {
     
 }
+
+var tags: [CatTagDetail] = [
+    CatTagDetail(uniqueID: 0, name: "TTTTT"),
+    CatTagDetail(uniqueID: 1, name: "GGGGG"),
+    CatTagDetail(uniqueID: 2, name: "FFFFF")
+    
+]
