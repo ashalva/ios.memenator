@@ -45,6 +45,7 @@
 		AB81E3C625B2F91F005312D8 /* MemeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3C525B2F91F005312D8 /* MemeCategory.swift */; };
 		DA330595296F1F59000FBB0D /* DogBreedsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA330593296F1F59000FBB0D /* DogBreedsListViewModel.swift */; };
 		DA330596296F1F59000FBB0D /* DogBreedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA330594296F1F59000FBB0D /* DogBreedsListView.swift */; };
+		DA909730298940790013649D /* DogBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90972F298940780013649D /* DogBreed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		AB81E3C525B2F91F005312D8 /* MemeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCategory.swift; sourceTree = "<group>"; };
 		DA330593296F1F59000FBB0D /* DogBreedsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBreedsListViewModel.swift; sourceTree = "<group>"; };
 		DA330594296F1F59000FBB0D /* DogBreedsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBreedsListView.swift; sourceTree = "<group>"; };
+		DA90972F298940780013649D /* DogBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			children = (
 				AB190C9F25B0CDDC0067F18C /* RedditPost.swift */,
 				AB81E3C525B2F91F005312D8 /* MemeCategory.swift */,
+				DA90972F298940780013649D /* DogBreed.swift */,
 			);
 			path = BusinesssModels;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				AB406EA125B62B5B00E7753A /* CreateMemeViewModel.swift in Sources */,
 				AB81E3A425B0D672005312D8 /* ImageLoader.swift in Sources */,
 				AB190C9125B0CC6F0067F18C /* GirchiView.swift in Sources */,
+				DA909730298940790013649D /* DogBreed.swift in Sources */,
 				AB2BCCE725B616F5006B567D /* ImagePicker.swift in Sources */,
 				0EAD231F296C677D005213DB /* CatTagsListView.swift in Sources */,
 				AB2BCCDE25B61684006B567D /* CreateMemeView.swift in Sources */,

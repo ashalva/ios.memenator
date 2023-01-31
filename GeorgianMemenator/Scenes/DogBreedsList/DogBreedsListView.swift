@@ -11,15 +11,17 @@ import Foundation
 
 struct DogBreedsListView: View {
     @ObservedObject var viewModel: DogBreedsListViewModel
+    
     var body: some View {
-        EmptyView()
-        
-        Image(systemName: "dog")
-    }
-}
+        List(viewModel.dogBreeds) { dogBreed in
+                Text(dogBreed.name)
 
-struct DogBreedsListView_Previews: PreviewProvider {
-    static var previews: some View {
-        DogBreedsListView(viewModel: DogBreedsListViewModel())
+            }
+        }
     }
-}
+
+    struct DogBreedsListView_Previews: PreviewProvider {
+            static var previews: some View {
+                DogBreedsListView(viewModel: DogBreedsListViewModel())
+            }
+        }

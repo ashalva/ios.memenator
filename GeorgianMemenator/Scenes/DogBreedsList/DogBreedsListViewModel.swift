@@ -10,5 +10,9 @@ import SwiftUI
 import Foundation
 
 class DogBreedsListViewModel: ObservableObject {
-    
+    @Published var dogBreeds = [
+        DogBreed(name: "poodel"),
+        DogBreed(name: "bulldog"),
+        DogBreed(name: "labrador")
+    ]
     }
