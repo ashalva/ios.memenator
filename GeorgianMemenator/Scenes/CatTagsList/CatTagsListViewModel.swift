@@ -16,5 +16,3 @@ class CatTagsListViewModel: ObservableObject {
         CatTagDetail(name: "Bengal cat")
     ]
 }
-
-
