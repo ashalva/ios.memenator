@@ -1,0 +1,25 @@
+name: GeorgianMemenator
+options:
+  bundleIdPrefix: ios.applysis.GeorgianMemenator
+  deploymentTarget:
+    iOS: 14.0
+targets:
+  GeorgianMemenator:
+    type: application
+    platform: iOS
+    sources: 
+      - path: GeorgianMemenator
+    scheme:
+      testTargets:
+      - GeorgianMemenatorTests
+    info:
+      path: "./GeorgianMemenator/Info.plist"
+      properties:
+        CFBundleDisplayName: $(BUNDLE_DISPLAY_NAME)
+        CFBundleShortVersionString: "0.0.1"
+        CFBundleVersion: "1.0"
+  GeorgianMemenatorTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: GeorgianMemenatorTests

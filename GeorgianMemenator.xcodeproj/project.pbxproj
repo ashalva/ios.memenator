@@ -10,6 +10,7 @@
 		0E94582A298935D400C5411F /* CatTagDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E945829298935D400C5411F /* CatTagDetail.swift */; };
 		0EAD231F296C677D005213DB /* CatTagsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD231E296C677D005213DB /* CatTagsListView.swift */; };
 		0EAD2321296C6788005213DB /* CatTagsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD2320296C6788005213DB /* CatTagsListViewModel.swift */; };
+		7E193864298AEED800895762 /* DogBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E193863298AEED800895762 /* DogBreed.swift */; };
 		AB190C7A25B0CB1E0067F18C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB190C7925B0CB1E0067F18C /* Endpoint.swift */; };
 		AB190C7F25B0CB590067F18C /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB190C7E25B0CB590067F18C /* Structures.swift */; };
 		AB190C8425B0CBAD0067F18C /* Endpoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB190C8325B0CBAD0067F18C /* Endpoint+Extensions.swift */; };
@@ -69,6 +70,7 @@
 		0E945829298935D400C5411F /* CatTagDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTagDetail.swift; sourceTree = "<group>"; };
 		0EAD231E296C677D005213DB /* CatTagsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTagsListView.swift; sourceTree = "<group>"; };
 		0EAD2320296C6788005213DB /* CatTagsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTagsListViewModel.swift; sourceTree = "<group>"; };
+		7E193863298AEED800895762 /* DogBreed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBreed.swift; sourceTree = "<group>"; };
 		AB190C7925B0CB1E0067F18C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		AB190C7E25B0CB590067F18C /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
 		AB190C8325B0CBAD0067F18C /* Endpoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Extensions.swift"; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		AB190C9B25B0CCC40067F18C /* BusinesssModels */ = {
 			isa = PBXGroup;
 			children = (
+				7E193863298AEED800895762 /* DogBreed.swift */,
 				AB190C9F25B0CDDC0067F18C /* RedditPost.swift */,
 				AB81E3C525B2F91F005312D8 /* MemeCategory.swift */,
 				0E945829298935D400C5411F /* CatTagDetail.swift */,
@@ -511,6 +514,7 @@
 				AB2BCCCD25B33674006B567D /* ReferenceView.swift in Sources */,
 				AB81E3B825B0E308005312D8 /* CatStatusCodesView.swift in Sources */,
 				AB81E39925B0D497005312D8 /* RedditViewModel.swift in Sources */,
+				7E193864298AEED800895762 /* DogBreed.swift in Sources */,
 				AB190CA025B0CDDC0067F18C /* RedditPost.swift in Sources */,
 				AB31E41325AE2FD600E6B572 /* MainViewModel.swift in Sources */,
 				AB2BCCC225B32E2F006B567D /* ExplainerView.swift in Sources */,
