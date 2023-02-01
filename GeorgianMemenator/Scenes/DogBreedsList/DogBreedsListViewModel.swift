@@ -11,8 +11,8 @@ import Foundation
 
 class DogBreedsListViewModel: ObservableObject {
     @Published var dogBreeds = [
-        DogBreed(name: "poodel"),
-        DogBreed(name: "bulldog"),
-        DogBreed(name: "labrador")
+        DogBreed(name: "poodel", minAge: 4, maxAge: 15),
+        DogBreed(name: "bulldog",minAge: 7, maxAge: 12),
+        DogBreed(name: "labrador",minAge: 5, maxAge: 13)
     ]
     }

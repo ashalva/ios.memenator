@@ -14,14 +14,16 @@ struct DogBreedsListView: View {
     
     var body: some View {
         List(viewModel.dogBreeds) { dogBreed in
+            VStack {
                 Text(dogBreed.name)
-
+                Text("min age: \(dogBreed.minAge), max age: \(dogBreed.maxAge)")
             }
         }
     }
-
+    
     struct DogBreedsListView_Previews: PreviewProvider {
-            static var previews: some View {
-                DogBreedsListView(viewModel: DogBreedsListViewModel())
-            }
+        static var previews: some View {
+            DogBreedsListView(viewModel: DogBreedsListViewModel())
         }
+    }
+}
