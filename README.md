@@ -7,4 +7,12 @@ Pet project to learn new technology in Swift. The project is using several free 
 Used technology SwiftUI & Combine, architecture: MVVM.
 
 
+### Installation
+1. Install [brew](https://brew.sh/)
+2. Clone the repository
+3. Open the terminal with the repository directory
+4. Execute `brew install xcodegen`
+5. Execute `xcodegen`
+6. Open Xcode and run the project
+
 
