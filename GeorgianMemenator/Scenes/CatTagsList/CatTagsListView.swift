@@ -13,7 +13,9 @@ struct CatTagsListView: View {
     @ObservedObject var viewModel: CatTagsListViewModel
     
     var body: some View {
-        EmptyView()
+        List(viewModel.tags) { tag in
+            Text(tag.name)
+        }
     }
 }
 
