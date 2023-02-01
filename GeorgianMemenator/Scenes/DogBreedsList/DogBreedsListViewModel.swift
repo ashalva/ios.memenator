@@ -15,4 +15,4 @@ class DogBreedsListViewModel: ObservableObject {
         DogBreed(name: "bulldog",minAge: 7, maxAge: 12),
         DogBreed(name: "labrador",minAge: 5, maxAge: 13)
     ]
-    }
+}

@@ -21,9 +21,9 @@ struct DogBreedsListView: View {
         }
     }
 }
-    
+
 struct DogBreedsListView_Previews: PreviewProvider {
-        static var previews: some View {
-            DogBreedsListView(viewModel: DogBreedsListViewModel())
-        }
+    static var previews: some View {
+        DogBreedsListView(viewModel: DogBreedsListViewModel())
     }
+}
