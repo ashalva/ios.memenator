@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,7 +41,6 @@
 		AB406EA125B62B5B00E7753A /* CreateMemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB406EA025B62B5B00E7753A /* CreateMemeViewModel.swift */; };
 		AB406EA625B62C3F00E7753A /* RectGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB406EA525B62C3F00E7753A /* RectGetter.swift */; };
 		AB406EAB25B62CD400E7753A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB406EAA25B62CD400E7753A /* UIView+Extensions.swift */; };
-		AB7B7094262B4F97005771BA /* Applysis in Frameworks */ = {isa = PBXBuildFile; productRef = AB7B7093262B4F97005771BA /* Applysis */; };
 		AB81E39925B0D497005312D8 /* RedditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E39825B0D497005312D8 /* RedditViewModel.swift */; };
 		AB81E39E25B0D49D005312D8 /* RedditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E39D25B0D49D005312D8 /* RedditView.swift */; };
 		AB81E3A425B0D672005312D8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3A325B0D672005312D8 /* ImageLoader.swift */; };
@@ -125,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB7B7094262B4F97005771BA /* Applysis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +399,6 @@
 			);
 			name = GeorgianMemenator;
 			packageProductDependencies = (
-				AB7B7093262B4F97005771BA /* Applysis */,
 			);
 			productName = GeorgianMemenator;
 			productReference = AB31E3DE25AE2F6A00E6B572 /* Memenator.app */;
@@ -476,7 +473,6 @@
 			);
 			mainGroup = AB31E3D525AE2F6900E6B572;
 			packageReferences = (
-				AB7B7092262B4F97005771BA /* XCRemoteSwiftPackageReference "applysis-ios-sdk" */,
 			);
 			productRefGroup = AB31E3DF25AE2F6A00E6B572 /* Products */;
 			projectDirPath = "";
@@ -890,25 +886,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AB7B7092262B4F97005771BA /* XCRemoteSwiftPackageReference "applysis-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/applysis/applysis-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AB7B7093262B4F97005771BA /* Applysis */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AB7B7092262B4F97005771BA /* XCRemoteSwiftPackageReference "applysis-ios-sdk" */;
-			productName = Applysis;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB31E3D625AE2F6900E6B572 /* Project object */;
 }
