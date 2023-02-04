@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E94582A298935D400C5411F /* CatTagDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E945829298935D400C5411F /* CatTagDetail.swift */; };
-		0EAD231F296C677D005213DB /* CatTagsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD231E296C677D005213DB /* CatTagsListView.swift */; };
-		0EAD2321296C6788005213DB /* CatTagsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD2320296C6788005213DB /* CatTagsListViewModel.swift */; };
-		7E193864298AEED800895762 /* DogBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E193863298AEED800895762 /* DogBreed.swift */; };
+		7E09C98A29599BBA00DF1ED3 /* RedditPostDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E09C98929599BBA00DF1ED3 /* RedditPostDTO.swift */; };
+		7E09C98D29599C1700DF1ED3 /* RedditPostMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E09C98C29599C1700DF1ED3 /* RedditPostMapper.swift */; };
+		7EA24985298E4DE000F75C8F /* DogBreedsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA24980298E4DE000F75C8F /* DogBreedsListViewModel.swift */; };
+		7EA24986298E4DE000F75C8F /* DogBreedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA24981298E4DE000F75C8F /* DogBreedsListView.swift */; };
+		7EA24987298E4DE000F75C8F /* CatTagsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA24983298E4DE000F75C8F /* CatTagsListView.swift */; };
+		7EA24988298E4DE000F75C8F /* CatTagsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA24984298E4DE000F75C8F /* CatTagsListViewModel.swift */; };
+		7EA2498B298E4DEC00F75C8F /* DogBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA24989298E4DEC00F75C8F /* DogBreed.swift */; };
+		7EA2498C298E4DEC00F75C8F /* CatTagDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2498A298E4DEC00F75C8F /* CatTagDetail.swift */; };
 		AB190C7A25B0CB1E0067F18C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB190C7925B0CB1E0067F18C /* Endpoint.swift */; };
 		AB190C7F25B0CB590067F18C /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB190C7E25B0CB590067F18C /* Structures.swift */; };
 		AB190C8425B0CBAD0067F18C /* Endpoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB190C8325B0CBAD0067F18C /* Endpoint+Extensions.swift */; };
@@ -45,8 +49,6 @@
 		AB81E3B825B0E308005312D8 /* CatStatusCodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3B725B0E308005312D8 /* CatStatusCodesView.swift */; };
 		AB81E3C125B2F8E5005312D8 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3C025B2F8E5005312D8 /* CategoryRow.swift */; };
 		AB81E3C625B2F91F005312D8 /* MemeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81E3C525B2F91F005312D8 /* MemeCategory.swift */; };
-		DA330595296F1F59000FBB0D /* DogBreedsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA330593296F1F59000FBB0D /* DogBreedsListViewModel.swift */; };
-		DA330596296F1F59000FBB0D /* DogBreedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA330594296F1F59000FBB0D /* DogBreedsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E945829298935D400C5411F /* CatTagDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTagDetail.swift; sourceTree = "<group>"; };
-		0EAD231E296C677D005213DB /* CatTagsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTagsListView.swift; sourceTree = "<group>"; };
-		0EAD2320296C6788005213DB /* CatTagsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTagsListViewModel.swift; sourceTree = "<group>"; };
-		7E193863298AEED800895762 /* DogBreed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBreed.swift; sourceTree = "<group>"; };
+		7E09C98929599BBA00DF1ED3 /* RedditPostDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditPostDTO.swift; sourceTree = "<group>"; };
+		7E09C98C29599C1700DF1ED3 /* RedditPostMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditPostMapper.swift; sourceTree = "<group>"; };
+		7EA24980298E4DE000F75C8F /* DogBreedsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBreedsListViewModel.swift; sourceTree = "<group>"; };
+		7EA24981298E4DE000F75C8F /* DogBreedsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBreedsListView.swift; sourceTree = "<group>"; };
+		7EA24983298E4DE000F75C8F /* CatTagsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatTagsListView.swift; sourceTree = "<group>"; };
+		7EA24984298E4DE000F75C8F /* CatTagsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatTagsListViewModel.swift; sourceTree = "<group>"; };
+		7EA24989298E4DEC00F75C8F /* DogBreed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBreed.swift; sourceTree = "<group>"; };
+		7EA2498A298E4DEC00F75C8F /* CatTagDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatTagDetail.swift; sourceTree = "<group>"; };
 		AB190C7925B0CB1E0067F18C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		AB190C7E25B0CB590067F18C /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
 		AB190C8325B0CBAD0067F18C /* Endpoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Extensions.swift"; sourceTree = "<group>"; };
@@ -111,8 +117,6 @@
 		AB81E3B725B0E308005312D8 /* CatStatusCodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatStatusCodesView.swift; sourceTree = "<group>"; };
 		AB81E3C025B2F8E5005312D8 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		AB81E3C525B2F91F005312D8 /* MemeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCategory.swift; sourceTree = "<group>"; };
-		DA330593296F1F59000FBB0D /* DogBreedsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBreedsListViewModel.swift; sourceTree = "<group>"; };
-		DA330594296F1F59000FBB0D /* DogBreedsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBreedsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,23 +144,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EAD231D296C6744005213DB /* CatTagsList */ = {
+		7E09C98829599BA900DF1ED3 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
-				0EAD231E296C677D005213DB /* CatTagsListView.swift */,
-				0EAD2320296C6788005213DB /* CatTagsListViewModel.swift */,
+				7E09C98929599BBA00DF1ED3 /* RedditPostDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		7E09C98B29599C0F00DF1ED3 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				7E09C98C29599C1700DF1ED3 /* RedditPostMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		7E09C98E29599C7000DF1ED3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB190C9625B0CCA40067F18C /* RedditService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7EA2497F298E4DE000F75C8F /* DogBreedsList */ = {
+			isa = PBXGroup;
+			children = (
+				7EA24980298E4DE000F75C8F /* DogBreedsListViewModel.swift */,
+				7EA24981298E4DE000F75C8F /* DogBreedsListView.swift */,
+			);
+			path = DogBreedsList;
+			sourceTree = "<group>";
+		};
+		7EA24982298E4DE000F75C8F /* CatTagsList */ = {
+			isa = PBXGroup;
+			children = (
+				7EA24983298E4DE000F75C8F /* CatTagsListView.swift */,
+				7EA24984298E4DE000F75C8F /* CatTagsListViewModel.swift */,
 			);
 			path = CatTagsList;
 			sourceTree = "<group>";
 		};
-		AB190C7225B0CAD30067F18C /* Services */ = {
+		AB190C7225B0CAD30067F18C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				7E09C98E29599C7000DF1ED3 /* Services */,
+				7E09C98B29599C0F00DF1ED3 /* Mappers */,
+				7E09C98829599BA900DF1ED3 /* DTOs */,
 				AB190C9B25B0CCC40067F18C /* BusinesssModels */,
 				AB190C9525B0CC990067F18C /* API */,
-				AB190C9625B0CCA40067F18C /* RedditService.swift */,
 			);
-			path = Services;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		AB190C8825B0CC2B0067F18C /* MainView */ = {
@@ -200,10 +239,10 @@
 		AB190C9B25B0CCC40067F18C /* BusinesssModels */ = {
 			isa = PBXGroup;
 			children = (
-				7E193863298AEED800895762 /* DogBreed.swift */,
+				7EA2498A298E4DEC00F75C8F /* CatTagDetail.swift */,
+				7EA24989298E4DEC00F75C8F /* DogBreed.swift */,
 				AB190C9F25B0CDDC0067F18C /* RedditPost.swift */,
 				AB81E3C525B2F91F005312D8 /* MemeCategory.swift */,
-				0E945829298935D400C5411F /* CatTagDetail.swift */,
 			);
 			path = BusinesssModels;
 			sourceTree = "<group>";
@@ -250,7 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				AB81E3A225B0D66D005312D8 /* Utils */,
-				AB190C7225B0CAD30067F18C /* Services */,
+				AB190C7225B0CAD30067F18C /* Network */,
 				AB31E41125AE2FA500E6B572 /* Scenes */,
 				AB31E3E125AE2F6A00E6B572 /* AppDelegate.swift */,
 				AB31E3E325AE2F6A00E6B572 /* SceneDelegate.swift */,
@@ -291,8 +330,8 @@
 		AB31E41125AE2FA500E6B572 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DA330592296F1F59000FBB0D /* DogBreedsList */,
-				0EAD231D296C6744005213DB /* CatTagsList */,
+				7EA24982298E4DE000F75C8F /* CatTagsList */,
+				7EA2497F298E4DE000F75C8F /* DogBreedsList */,
 				AB2BCCE225B61689006B567D /* Create */,
 				AB2BCCCB25B3366A006B567D /* Reference */,
 				AB81E3A825B0D9E0005312D8 /* Common */,
@@ -341,15 +380,6 @@
 				AB81E3C025B2F8E5005312D8 /* CategoryRow.swift */,
 			);
 			path = CategoryRow;
-			sourceTree = "<group>";
-		};
-		DA330592296F1F59000FBB0D /* DogBreedsList */ = {
-			isa = PBXGroup;
-			children = (
-				DA330593296F1F59000FBB0D /* DogBreedsListViewModel.swift */,
-				DA330594296F1F59000FBB0D /* DogBreedsListView.swift */,
-			);
-			path = DogBreedsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,39 +518,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB406EA125B62B5B00E7753A /* CreateMemeViewModel.swift in Sources */,
+				7EA24988298E4DE000F75C8F /* CatTagsListViewModel.swift in Sources */,
+				7E09C98A29599BBA00DF1ED3 /* RedditPostDTO.swift in Sources */,
 				AB81E3A425B0D672005312D8 /* ImageLoader.swift in Sources */,
 				AB190C9125B0CC6F0067F18C /* GirchiView.swift in Sources */,
 				AB2BCCE725B616F5006B567D /* ImagePicker.swift in Sources */,
-				0EAD231F296C677D005213DB /* CatTagsListView.swift in Sources */,
 				AB2BCCDE25B61684006B567D /* CreateMemeView.swift in Sources */,
 				AB190C9725B0CCA40067F18C /* RedditService.swift in Sources */,
 				AB81E39E25B0D49D005312D8 /* RedditView.swift in Sources */,
+				7EA2498C298E4DEC00F75C8F /* CatTagDetail.swift in Sources */,
 				AB406EA625B62C3F00E7753A /* RectGetter.swift in Sources */,
-				0EAD2321296C6788005213DB /* CatTagsListViewModel.swift in Sources */,
 				AB31E3E225AE2F6A00E6B572 /* AppDelegate.swift in Sources */,
 				AB81E3B025B0E179005312D8 /* CatStatusCodesViewModel.swift in Sources */,
 				AB406E9C25B626FE00E7753A /* CIFilter+Extensions.swift in Sources */,
 				AB406EAB25B62CD400E7753A /* UIView+Extensions.swift in Sources */,
-				DA330595296F1F59000FBB0D /* DogBreedsListViewModel.swift in Sources */,
 				AB81E3C625B2F91F005312D8 /* MemeCategory.swift in Sources */,
+				7EA24985298E4DE000F75C8F /* DogBreedsListViewModel.swift in Sources */,
 				AB190C7F25B0CB590067F18C /* Structures.swift in Sources */,
-				DA330596296F1F59000FBB0D /* DogBreedsListView.swift in Sources */,
 				AB81E3AA25B0D9F5005312D8 /* ActivityIndicatorView.swift in Sources */,
+				7EA24986298E4DE000F75C8F /* DogBreedsListView.swift in Sources */,
 				AB190C8C25B0CC5E0067F18C /* GirchiViewModel.swift in Sources */,
 				AB31E3E425AE2F6A00E6B572 /* SceneDelegate.swift in Sources */,
 				AB2BCCC725B32FA2006B567D /* Color+Extensions.swift in Sources */,
 				AB190C8425B0CBAD0067F18C /* Endpoint+Extensions.swift in Sources */,
 				AB31E3E625AE2F6A00E6B572 /* MainView.swift in Sources */,
+				7E09C98D29599C1700DF1ED3 /* RedditPostMapper.swift in Sources */,
 				AB2BCCCD25B33674006B567D /* ReferenceView.swift in Sources */,
 				AB81E3B825B0E308005312D8 /* CatStatusCodesView.swift in Sources */,
+				7EA24987298E4DE000F75C8F /* CatTagsListView.swift in Sources */,
 				AB81E39925B0D497005312D8 /* RedditViewModel.swift in Sources */,
-				7E193864298AEED800895762 /* DogBreed.swift in Sources */,
 				AB190CA025B0CDDC0067F18C /* RedditPost.swift in Sources */,
 				AB31E41325AE2FD600E6B572 /* MainViewModel.swift in Sources */,
 				AB2BCCC225B32E2F006B567D /* ExplainerView.swift in Sources */,
 				AB81E3C125B2F8E5005312D8 /* CategoryRow.swift in Sources */,
+				7EA2498B298E4DEC00F75C8F /* DogBreed.swift in Sources */,
 				AB406E9725B619B100E7753A /* Photo+Extensions.swift in Sources */,
-				0E94582A298935D400C5411F /* CatTagDetail.swift in Sources */,
 				AB190C7A25B0CB1E0067F18C /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
