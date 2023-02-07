@@ -10,9 +10,9 @@ import SwiftUI
 import Foundation
 
 class CatTagsListViewModel: ObservableObject {
-    @Published var tags: [CatTagDetail] = [
-        CatTagDetail(name: "Sphynx cat"),
-        CatTagDetail(name: "Munchkin cat"),
-        CatTagDetail(name: "Bengal cat")
+    @Published var tags: [CatTag] = [
+        CatTag(name: "Sphynx cat"),
+        CatTag(name: "Munchkin cat"),
+        CatTag(name: "Bengal cat")
     ]
 }

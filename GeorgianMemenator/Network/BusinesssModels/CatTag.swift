@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CatTagDetail: Identifiable {
+struct CatTag: Identifiable {
     let id: String = UUID().uuidString
     let name: String
 }
