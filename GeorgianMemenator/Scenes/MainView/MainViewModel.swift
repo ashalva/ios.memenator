@@ -24,6 +24,7 @@ class MainViewModel: ObservableObject {
     
     init() {
         generateRandomMeme()
+        
     }
     
     func generateRandomMeme() {

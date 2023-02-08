@@ -10,19 +10,20 @@ import Combine
 
 
 protocol CatListServing {
-    func getCatTags() -> AnyPublisher<[CatTag], Error>
+    func getCatTagss() -> AnyPublisher<[CatTag], Error>
 }
 
 class CatListService: CatListServing {
-    private let catTagApiURL = "https://cataas.com/api/"
+    private let catTagApiURL = "https://cataas.com/api/tags"
 
-    func getCatTags() -> AnyPublisher<[CatTag], Error> {
+    func getCatTagss() -> AnyPublisher<[CatTag], Error> {
         let request = Endpoint<[String]>(baseURL: catTagApiURL)
             .appendingPathParameter("tags")
             .usingDefaultParameters()
         
         return try! request
             .usingMethod(.GET)
+            .loggingResponse()
             .build()
             .asFuture()
             .map {
