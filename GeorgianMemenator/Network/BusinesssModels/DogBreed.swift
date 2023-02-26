@@ -8,8 +8,8 @@
 
 import Foundation
 struct DogBreed: Identifiable {
-    let name: String
     let id: String = UUID().uuidString
+    let name: String
     let description: String
     let minLife: Int
     let maxLife: Int
@@ -17,7 +17,4 @@ struct DogBreed: Identifiable {
     let maleMaxWeight: Int
     let femaleMinWeight: Int
     let femaleMaxWeight: Int
-    
-
-    
 }

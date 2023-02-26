@@ -12,13 +12,12 @@ enum DogBreedsMapper {
         .init(
             name: dto.attributes.name,
             description: dto.attributes.description,
-            minLife: Int(dto.attributes.life.min),
-            maxLife: Int(dto.attributes.life.max),
-            maleMinWeight: Int(dto.attributes.maleWeight.min),
-            maleMaxWeight: Int(dto.attributes.maleWeight.max),
-            femaleMinWeight: Int(dto.attributes.femaleWeight.min),
-            femaleMaxWeight: Int(dto.attributes.femaleWeight.max)
-
+            minLife: dto.attributes.life.min,
+            maxLife: dto.attributes.life.max,
+            maleMinWeight: dto.attributes.maleWeight.min,
+            maleMaxWeight: dto.attributes.maleWeight.max,
+            femaleMinWeight: dto.attributes.femaleWeight.min,
+            femaleMaxWeight: dto.attributes.femaleWeight.max
         )
     }
 }

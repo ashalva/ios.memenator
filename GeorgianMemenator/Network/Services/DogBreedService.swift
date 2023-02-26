@@ -23,11 +23,9 @@ class DogBreedsService: DogBreedsServing {
             .usingMethod(.GET)
             .build()
             .asFuture()
-        
             .map {
                 $0.data.map { breed in DogBreedsMapper.toEntity(dto: breed) }
             }
-//            .compactMap({ DogBreedMapper.toEntity(dto: $0) })
             .eraseToAnyPublisher()
 
     }

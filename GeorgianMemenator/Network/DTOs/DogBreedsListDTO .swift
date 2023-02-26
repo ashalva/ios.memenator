@@ -3,17 +3,17 @@
 //  GeorgianMemenator
 //
 //  Created by Qeti Avanashvili on 25.02.23.
-//
 
 import Foundation
+
 struct DogBreedDTO: Codable {
     struct Attributes: Codable {
         struct Weight: Codable {
-            let max, min: Double
+            let max, min: Int
         }
 
         struct Life: Codable {
-            let max, min: Double
+            let max, min: Int
         }
 
 
