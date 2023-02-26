@@ -15,8 +15,7 @@ struct DogBreedDTO: Codable {
         struct Life: Codable {
             let max, min: Int
         }
-
-
+        
         let name, description: String
         let life: Life
         let maleWeight, femaleWeight: Weight

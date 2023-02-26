@@ -27,6 +27,5 @@ class DogBreedsService: DogBreedsServing {
                 $0.data.map { breed in DogBreedsMapper.toEntity(dto: breed) }
             }
             .eraseToAnyPublisher()
-
     }
 }
