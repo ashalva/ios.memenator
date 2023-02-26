@@ -16,7 +16,7 @@ struct DogBreedsListView: View {
         List(viewModel.dogBreeds) { dogBreed in
             VStack {
                 Text(dogBreed.name)
-                Text("min age: \(dogBreed.minAge), max age: \(dogBreed.maxAge)")
+                Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
             }
         }
     }

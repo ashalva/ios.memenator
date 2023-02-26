@@ -11,6 +11,11 @@ import Foundation
 struct DogBreed: Identifiable {
     let id: String = UUID().uuidString
     let name: String
-    let minAge: Int
-    let maxAge: Int
+    let description: String
+    let minLife: Int
+    let maxLife: Int
+    let maleMinWeight: Int
+    let maleMaxWeight: Int
+    let femaleMinWeight: Int
+    let femaleMaxWeight: Int
 }
