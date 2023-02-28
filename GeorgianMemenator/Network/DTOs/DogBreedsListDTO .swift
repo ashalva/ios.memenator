@@ -11,7 +11,7 @@ struct DogBreedDTO: Codable {
         struct Weight: Codable {
             let max, min: Int
         }
-
+        
         struct Life: Codable {
             let max, min: Int
         }
@@ -20,7 +20,7 @@ struct DogBreedDTO: Codable {
         let life: Life
         let maleWeight, femaleWeight: Weight
         let hypoallergenic: Bool
-
+        
         enum CodingKeys: String, CodingKey {
             case name, description, life
             case maleWeight = "male_weight"
@@ -28,7 +28,7 @@ struct DogBreedDTO: Codable {
             case hypoallergenic
         }
     }
-
+    
     let id: String
     let type: String
     let attributes: Attributes
