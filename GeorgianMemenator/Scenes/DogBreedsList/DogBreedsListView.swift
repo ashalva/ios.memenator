@@ -28,8 +28,8 @@ struct DogBreedsListView: View {
 
 struct DogBreedsListView_Previews: PreviewProvider {
     static var previews: some View {
-                DogBreedsListView(
-                    viewModel: DogBreedsListViewModel(dogBreedsService: DogBreedsService())
+        DogBreedsListView(
+            viewModel: DogBreedsListViewModel(dogBreedsService: DogBreedsService())
         )
     }
 }

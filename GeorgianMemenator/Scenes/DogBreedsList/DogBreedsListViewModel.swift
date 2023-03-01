@@ -15,9 +15,6 @@ class DogBreedsListViewModel: ObservableObject {
     
     @Published var dogBreeds = [DogBreed]()
     
-//    @Published private(set) var hasError: Bool = false
-//    @Published private(set) var isLoading: Bool = false
-//    @Published private(set) var isImageLoading: Bool = false
     @Published private(set) var currentPost: [DogBreed]?
     
     private(set) var imageLoader = ImageLoader()
