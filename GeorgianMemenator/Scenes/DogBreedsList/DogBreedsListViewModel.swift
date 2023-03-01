@@ -8,12 +8,42 @@
 
 import SwiftUI
 import Foundation
+import Combine
 
 class DogBreedsListViewModel: ObservableObject {
-    @Published var dogBreeds = [
-        DogBreed(name: "nagazi",description: "a",minLife: 4, maxLife: 10,maleMinWeight: 12,maleMaxWeight: 14,femaleMinWeight: 23,femaleMaxWeight: 26),
-                 
-        DogBreed(name: "bulldog",description: "b",minLife: 4, maxLife: 10,maleMinWeight: 12,maleMaxWeight: 14,femaleMinWeight: 23,femaleMaxWeight: 26),
-        DogBreed(name: "labrador",description: "c",minLife: 4, maxLife: 10,maleMinWeight: 12,maleMaxWeight: 14,femaleMinWeight: 23,femaleMaxWeight: 26)
-    ]
+    private let dogBreedsService: DogBreedsServing
+    
+    @Published var dogBreeds = [DogBreed]()
+    
+    @Published private(set) var currentPost: [DogBreed]?
+    
+    private(set) var imageLoader = ImageLoader()
+    
+    private var cancellables = Set<AnyCancellable>()
+    
+    init(dogBreedsService: DogBreedsServing) {
+        self.dogBreedsService = dogBreedsService
+    }
+    
+    deinit {
+        cancellables.removeAll()
+    }
+    
+    func initialFetch() {
+        getDogBreeds()
+    }
+    
+    func getDogBreeds() {
+        dogBreedsService
+            .getDogBreeds()
+            .receive(on: DispatchQueue.main)
+            .sink(
+                receiveCompletion: { resp in
+                    if case .failure = resp {
+                    }
+                }, receiveValue: { [weak self] val in
+                    self?.dogBreeds = val
+                })
+            .store(in: &cancellables)
+    }
 }

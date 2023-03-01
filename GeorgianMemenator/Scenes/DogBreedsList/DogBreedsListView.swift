@@ -19,11 +19,17 @@ struct DogBreedsListView: View {
                 Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
             }
         }
+        .onAppear(perform: {
+            viewModel.initialFetch()
+        })
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
 struct DogBreedsListView_Previews: PreviewProvider {
     static var previews: some View {
-        DogBreedsListView(viewModel: DogBreedsListViewModel())
+        DogBreedsListView(
+            viewModel: DogBreedsListViewModel(dogBreedsService: DogBreedsService())
+        )
     }
 }

@@ -18,7 +18,7 @@ class RedditViewModel: ObservableObject {
     @Published private(set) var currentPost: RedditPost?
     
     private(set) var imageLoader = ImageLoader()
-
+    
     private var cancellables = Set<AnyCancellable>()
     
     init(redditService: RedditServing) {
@@ -46,20 +46,20 @@ class RedditViewModel: ObservableObject {
             .getRandomPost()
             .receive(on: DispatchQueue.main)
             .sink(
-            receiveCompletion: { [weak self] resp in
-                if case .failure = resp {
-                    self?.hasError = true
+                receiveCompletion: { [weak self] resp in
+                    if case .failure = resp {
+                        self?.hasError = true
+                        self?.isLoading = false
+                        self?.isImageLoading = false
+                    }
+                }, receiveValue: { [weak self] val in
+                    self?.currentPost = val
                     self?.isLoading = false
                     self?.isImageLoading = false
-                }
-            }, receiveValue: { [weak self] val in
-                self?.currentPost = val
-                self?.isLoading = false
-                self?.isImageLoading = false
-                if let url = self?.currentPost?.url {
-                    self?.imageLoader.getData(from: url)
-                }
-            })
+                    if let url = self?.currentPost?.url {
+                        self?.imageLoader.getData(from: url)
+                    }
+                })
             .store(in: &cancellables)
     }
 }
