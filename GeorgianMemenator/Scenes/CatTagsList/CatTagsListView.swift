@@ -22,7 +22,6 @@ struct CatTagsListView: View {
         })
         .edgesIgnoringSafeArea(.bottom)
     }
-    
 }
 
 struct CatTagsListView_Previews: PreviewProvider {
