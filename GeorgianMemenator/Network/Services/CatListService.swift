@@ -14,7 +14,7 @@ protocol CatListServing {
 }
 
 class CatListService: CatListServing {
-    private let catTagApiURL = "https://cataas.com/api/tags"
+    private let catTagApiURL = "https://cataas.com/api"
 
     func getCatTagss() -> AnyPublisher<[CatTag], Error> {
         let request = Endpoint<[String]>(baseURL: catTagApiURL)
