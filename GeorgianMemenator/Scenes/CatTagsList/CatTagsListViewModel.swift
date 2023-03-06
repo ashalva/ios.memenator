@@ -15,10 +15,6 @@ class CatTagsListViewModel: ObservableObject {
     
     @Published var tags: [CatTag] = []
     
-    @Published private(set) var isLoading: Bool = false
-    
-    private(set) var imageLoader = ImageLoader()
-    
     private var cancellables = Set<AnyCancellable>()
     
     init(catTagsService: CatListServing) {
@@ -34,7 +30,6 @@ class CatTagsListViewModel: ObservableObject {
     }
     
     func getCatTags() {
-        isLoading = true
         
         catTagsService
             .getCatTagss()
@@ -42,11 +37,9 @@ class CatTagsListViewModel: ObservableObject {
             .sink(
             receiveCompletion: { [weak self] resp in
                 if case .failure = resp {
-                    self?.isLoading = false
                 }
             }, receiveValue: { [weak self] val in
                 self?.tags = val
-                self?.isLoading = false
             })
            .store(in: &cancellables)
     }
