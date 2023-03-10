@@ -11,14 +11,12 @@ import Foundation
 import Combine
 
 class DogBreedsListViewModel: ObservableObject {
-    private let dogBreedsService: DogBreedsServing
-    
     @Published var dogBreeds = [DogBreed]()
+    @Published private(set) var hasError: Bool = false
+    @Published private(set) var isLoading: Bool = false
     
-    @Published private(set) var currentPost: [DogBreed]?
-    
+    private let dogBreedsService: DogBreedsServing
     private(set) var imageLoader = ImageLoader()
-    
     private var cancellables = Set<AnyCancellable>()
     
     init(dogBreedsService: DogBreedsServing) {
@@ -34,15 +32,20 @@ class DogBreedsListViewModel: ObservableObject {
     }
     
     func getDogBreeds() {
+        isLoading = true
         dogBreedsService
             .getDogBreeds()
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { resp in
                     if case .failure = resp {
+                        self.isLoading = false
+                        self.hasError = true
                     }
                 }, receiveValue: { [weak self] val in
                     self?.dogBreeds = val
+                    self?.isLoading = false
+                    self?.hasError = false
                 })
             .store(in: &cancellables)
     }
