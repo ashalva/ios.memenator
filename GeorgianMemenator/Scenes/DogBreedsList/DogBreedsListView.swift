@@ -13,10 +13,21 @@ struct DogBreedsListView: View {
     @ObservedObject var viewModel: DogBreedsListViewModel
     
     var body: some View {
-        List(viewModel.dogBreeds) { dogBreed in
-            VStack {
-                Text(dogBreed.name)
-                Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
+        VStack {
+            if viewModel.hasError {
+                Text("Error")
+                    .font(.title)
+                    .padding(.top, 32)
+            } else if viewModel.isLoading {
+                ActivityIndicator(isAnimating: true)
+                Text("Is loading")
+                    .font(.title)
+                    .padding(.top, 32)
+            } else {
+                List(viewModel.dogBreeds) { dogBreed in
+                    Text(dogBreed.name)
+                    Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
+                }
             }
         }
         .onAppear(perform: {
