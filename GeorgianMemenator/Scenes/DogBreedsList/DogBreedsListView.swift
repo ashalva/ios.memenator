@@ -20,9 +20,6 @@ struct DogBreedsListView: View {
                     .padding(.top, 32)
             } else if viewModel.isLoading {
                 ActivityIndicator(isAnimating: true)
-                Text("Is loading")
-                    .font(.title)
-                    .padding(.top, 32)
             } else {
                 List(viewModel.dogBreeds) { dogBreed in
                     Text(dogBreed.name)
