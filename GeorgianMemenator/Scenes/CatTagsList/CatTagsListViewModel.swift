@@ -35,7 +35,7 @@ class CatTagsListViewModel: ObservableObject {
             .getCatTagss()
             .receive(on: DispatchQueue.main)
             .sink(
-            receiveCompletion: { [weak self] resp in
+            receiveCompletion: { resp in
                 if case .failure = resp {
                 }
             }, receiveValue: { [weak self] val in
