@@ -22,8 +22,10 @@ struct DogBreedsListView: View {
                 ActivityIndicator(isAnimating: true)
             } else {
                 List(viewModel.dogBreeds) { dogBreed in
-                    Text(dogBreed.name)
-                    Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(dogBreed.name)
+                        Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
+                    }
                 }
             }
         }
