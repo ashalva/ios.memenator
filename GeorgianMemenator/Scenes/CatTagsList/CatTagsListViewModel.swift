@@ -8,11 +8,40 @@
 
 import SwiftUI
 import Foundation
+import Combine
 
 class CatTagsListViewModel: ObservableObject {
-    @Published var tags: [CatTagDetail] = [
-        CatTagDetail(name: "Sphynx cat"),
-        CatTagDetail(name: "Munchkin cat"),
-        CatTagDetail(name: "Bengal cat")
-    ]
+    private let catTagsService: CatListServing
+    
+    @Published var tags: [CatTag] = []
+    
+    private var cancellables = Set<AnyCancellable>()
+    
+    init(catTagsService: CatListServing) {
+        self.catTagsService = catTagsService
+    }
+    
+    deinit {
+        cancellables.removeAll()
+    }
+    
+    func initialFetch() {
+        getCatTags()
+    }
+    
+    func getCatTags() {
+        
+        catTagsService
+            .getCatTagss()
+            .receive(on: DispatchQueue.main)
+            .sink(
+            receiveCompletion: { resp in
+                if case .failure = resp {
+                }
+            }, receiveValue: { [weak self] val in
+                self?.tags = val
+            })
+           .store(in: &cancellables)
+    }
+    
 }
