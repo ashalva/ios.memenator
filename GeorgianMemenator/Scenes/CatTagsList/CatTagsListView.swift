@@ -11,7 +11,6 @@ import Foundation
 
 struct CatTagsListView: View {
     @ObservedObject var viewModel: CatTagsListViewModel
-    @State var image: UIImage = UIImage()
     
     var body: some View {
         List(viewModel.tags) { tag in
