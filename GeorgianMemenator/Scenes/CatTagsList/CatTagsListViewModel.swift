@@ -13,6 +13,9 @@ import Combine
 class CatTagsListViewModel: ObservableObject {
     private let catTagsService: CatListServing
     
+    @Published private(set) var hasError: Bool = false
+    @Published private(set) var isLoading: Bool = false
+    
     @Published var tags: [CatTag] = []
     
     private var cancellables = Set<AnyCancellable>()
@@ -30,16 +33,21 @@ class CatTagsListViewModel: ObservableObject {
     }
     
     func getCatTags() {
+        isLoading = true
         
         catTagsService
             .getCatTagss()
             .receive(on: DispatchQueue.main)
             .sink(
-            receiveCompletion: { resp in
+            receiveCompletion: {
+                [weak self] resp in
                 if case .failure = resp {
+                    self?.hasError = true
+                    self?.isLoading = false
                 }
             }, receiveValue: { [weak self] val in
                 self?.tags = val
+                self?.isLoading = false
             })
            .store(in: &cancellables)
     }
