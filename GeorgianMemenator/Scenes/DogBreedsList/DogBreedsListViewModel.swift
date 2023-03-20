@@ -37,10 +37,10 @@ class DogBreedsListViewModel: ObservableObject {
             .getDogBreeds()
             .receive(on: DispatchQueue.main)
             .sink(
-                receiveCompletion: { resp in
-                    if case .failure = resp {
-                        self.isLoading = false
-                        self.hasError = true
+                receiveCompletion: { [weak self] val in
+                    if case .failure = val {
+                        self?.isLoading = false
+                        self?.hasError = true
                     }
                 }, receiveValue: { [weak self] val in
                     self?.dogBreeds = val
