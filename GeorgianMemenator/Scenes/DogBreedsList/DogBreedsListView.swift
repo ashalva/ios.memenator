@@ -11,7 +11,6 @@ import Foundation
 
 struct DogBreedsListView: View {
     @ObservedObject var viewModel: DogBreedsListViewModel
-    
     var body: some View {
         VStack {
             if viewModel.hasError {
@@ -21,14 +20,19 @@ struct DogBreedsListView: View {
             } else if viewModel.isLoading {
                 ActivityIndicator(isAnimating: true)
             } else {
-                List(viewModel.dogBreeds) { dogBreed in
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(dogBreed.name)
-                        Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
+                NavigationView {
+                    List(viewModel.dogBreeds) { dogBreed in
+                        NavigationLink(destination: EmptyView()) {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(dogBreed.name)
+                                Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
+                            }
+                        }
                     }
                 }
             }
         }
+        
         .onAppear(perform: {
             viewModel.initialFetch()
         })

@@ -36,9 +36,9 @@ struct MainView: View {
                         }
                         
                         NavigationLink(destination:
-                                    CreateMemeView(
-                                        viewModel: CreateMemeViewModel()
-                                    )
+                                        CreateMemeView(
+                                            viewModel: CreateMemeViewModel()
+                                        )
                         ) {
                             CategoryRow(category: viewModel.categories[1])
                         }
@@ -58,7 +58,7 @@ struct MainView: View {
                         ) {
                             CategoryRow(category: viewModel.categories[3])
                         }
-
+                        
                         
                         NavigationLink(destination:
                                         ReferenceView()
@@ -72,19 +72,18 @@ struct MainView: View {
                                             viewModel: DogBreedsListViewModel(
                                                 dogBreedsService: DogBreedsService()
                                             )
-                                    )
+                                        )
                         ) {
                             CategoryRow(category: viewModel.categories[5])
                         }
-                    
-
+                        
+                        
                         NavigationLink(destination:
                                         CatTagsListView(viewModel:CatTagsListViewModel(
-                                                        catTagsService: CatListService()
-                                                        
-                                                       )
-                                            )
-
+                                            catTagsService: CatListService()
+                                        )
+                                        )
+                                       
                         ) {
                             CategoryRow(category: viewModel.categories[6])
                         }
