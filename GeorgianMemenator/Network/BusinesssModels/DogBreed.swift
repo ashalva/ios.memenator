@@ -9,7 +9,7 @@
 import Foundation
 
 struct DogBreed: Identifiable {
-    let id: String = UUID().uuidString
+    let id: String
     let name: String
     let description: String
     let minLife: Int
