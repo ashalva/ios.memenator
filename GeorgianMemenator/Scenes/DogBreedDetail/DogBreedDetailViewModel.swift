@@ -6,17 +6,9 @@
 //
 
 import Foundation
-import SwiftUI
 
 
 class DogBreedDetailViewModel: ObservableObject {
-    var body: some View {
-        EmptyView()
-    }
+    
 }
 
-struct DogBreedDetailViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        DogBreedDetailView(viewModel: DogBreedDetailViewModel())
-    }
-}

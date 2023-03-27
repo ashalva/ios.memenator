@@ -20,13 +20,11 @@ struct DogBreedsListView: View {
             } else if viewModel.isLoading {
                 ActivityIndicator(isAnimating: true)
             } else {
-                NavigationView {
-                    List(viewModel.dogBreeds) { dogBreed in
-                        NavigationLink(destination: EmptyView()) {
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(dogBreed.name)
-                                Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
-                            }
+                List(viewModel.dogBreeds) { dogBreed in
+                    NavigationLink(destination: EmptyView()) {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(dogBreed.name)
+                            Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")
                         }
                     }
                 }
