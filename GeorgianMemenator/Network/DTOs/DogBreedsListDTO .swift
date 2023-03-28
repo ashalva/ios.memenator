@@ -37,3 +37,7 @@ struct DogBreedDTO: Codable {
 struct DogBreedsListDTO: Codable {
     let data: [DogBreedDTO]
 }
+
+struct DogBreedDetailDTO: Codable {
+    let data: DogBreedDTO
+}

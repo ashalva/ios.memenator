@@ -28,4 +28,19 @@ class DogBreedsService: DogBreedsServing {
             }
             .eraseToAnyPublisher()
     }
+    
+    func getDogBreedDetails(with id: String) -> AnyPublisher<DogBreed, Error> {
+        let request = Endpoint<DogBreedDetailDTO>(baseURL: dogBreedApiUrl)
+            .appendingPathParameter("breeds/\(id)")
+            .usingDefaultParameters()
+        
+        return try! request
+            .usingMethod(.GET)
+            .build()
+            .asFuture()
+            .map {
+                DogBreedsMapper.toEntity(dto: $0.data)
+            }
+            .eraseToAnyPublisher()
+    }
 }
