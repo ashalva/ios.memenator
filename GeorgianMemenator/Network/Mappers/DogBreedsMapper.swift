@@ -10,6 +10,7 @@ import Foundation
 enum DogBreedsMapper {
     static func toEntity(dto: DogBreedDTO) -> DogBreed {
         .init(
+            id: dto.id,
             name: dto.attributes.name,
             description: dto.attributes.description,
             minLife: dto.attributes.life.min,
