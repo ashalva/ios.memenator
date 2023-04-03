@@ -22,8 +22,9 @@ class DogBreedDetailViewModel: ObservableObject {
     func getDogBreedDetail() {
         dogBreedDetailService
             .getDogBreedDetails(with: dogBreedId)
+            .receive(on: DispatchQueue.main)
             .sink(
-                receiveCompletion: { [weak self] val in
+                receiveCompletion: {  val in
                     if case .failure = val {
                     }
                 }, receiveValue: { [weak self] val in
