@@ -9,9 +9,12 @@ import Combine
 
 class DogBreedDetailViewModel: ObservableObject {
     @Published var dogBreedDetail: DogBreed?
-   
+    @Published private(set) var hasError: Bool = false
+    @Published private(set) var isLoading: Bool = false
+    
     private let dogBreedDetailService: DogBreedsServing
     private let dogBreedId: String
+    private(set) var imageLoader = ImageLoader()
     private var cancellables = Set<AnyCancellable>()
     
     init(dogBreedDetailService: DogBreedsServing, dogBreedId: String) {
@@ -24,11 +27,15 @@ class DogBreedDetailViewModel: ObservableObject {
             .getDogBreedDetails(with: dogBreedId)
             .receive(on: DispatchQueue.main)
             .sink(
-                receiveCompletion: {  val in
+                receiveCompletion: { [weak self] val in
                     if case .failure = val {
+                        self?.isLoading = false
+                        self?.hasError = true
                     }
                 }, receiveValue: { [weak self] val in
                     self?.dogBreedDetail = val
+                    self?.isLoading = false
+                    self?.hasError = false
                 })
             .store(in: &cancellables)
     }
