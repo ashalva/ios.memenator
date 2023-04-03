@@ -21,7 +21,14 @@ struct DogBreedsListView: View {
                 ActivityIndicator(isAnimating: true)
             } else {
                 List(viewModel.dogBreeds) { dogBreed in
-                    NavigationLink(destination: DogBreedDetailView(viewModel: DogBreedDetailViewModel())) {
+                    NavigationLink(
+                        destination: DogBreedDetailView(
+                            viewModel: DogBreedDetailViewModel(
+                                dogBreedDetailService: DogBreedsService(), dogBreedId: dogBreed.id
+                            )
+                        )
+                    )
+                    {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(dogBreed.name)
                             Text("min life: \(dogBreed.minLife), max life: \(dogBreed.maxLife)")

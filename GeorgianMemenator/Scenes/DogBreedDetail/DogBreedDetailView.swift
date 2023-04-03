@@ -15,8 +15,3 @@ struct DogBreedDetailView: View {
     }
 }
 
-struct DogBreedDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DogBreedDetailView(viewModel: DogBreedDetailViewModel())
-    }
-}

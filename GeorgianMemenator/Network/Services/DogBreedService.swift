@@ -9,6 +9,7 @@ import Foundation
 
 protocol DogBreedsServing {
     func getDogBreeds() -> AnyPublisher<[DogBreed], Error>
+    func getDogBreedDetails(with id: String) -> AnyPublisher<DogBreed, Error>
 }
 
 class DogBreedsService: DogBreedsServing {
