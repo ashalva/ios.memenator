@@ -14,7 +14,6 @@ class DogBreedDetailViewModel: ObservableObject {
     
     private let dogBreedDetailService: DogBreedsServing
     private let dogBreedId: String
-    private(set) var imageLoader = ImageLoader()
     private var cancellables = Set<AnyCancellable>()
     
     init(dogBreedDetailService: DogBreedsServing, dogBreedId: String) {
@@ -23,6 +22,7 @@ class DogBreedDetailViewModel: ObservableObject {
     }
    
     func getDogBreedDetail() {
+        isLoading = true
         dogBreedDetailService
             .getDogBreedDetails(with: dogBreedId)
             .receive(on: DispatchQueue.main)
