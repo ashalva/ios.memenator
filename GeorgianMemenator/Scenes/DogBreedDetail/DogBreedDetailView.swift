@@ -11,7 +11,14 @@ import Foundation
 struct DogBreedDetailView: View {
     @ObservedObject var viewModel: DogBreedDetailViewModel
     var body: some View {
-        EmptyView()
+        VStack {
+            if viewModel.hasError {
+                Text("Error")
+                    .font(.title)
+                    .padding(.top, 32)
+            } else if viewModel.isLoading {
+                ActivityIndicator(isAnimating: true)
+            }
+        }
     }
 }
-
