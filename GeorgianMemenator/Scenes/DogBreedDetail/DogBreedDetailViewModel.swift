@@ -24,6 +24,7 @@ class DogBreedDetailViewModel: ObservableObject {
     func initialFetch() {
         getDogBreedDetail()
     }
+    
     func getDogBreedDetail() {
         isLoading = true
         dogBreedDetailService

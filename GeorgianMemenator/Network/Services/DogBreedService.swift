@@ -14,8 +14,7 @@ protocol DogBreedsServing {
 
 class DogBreedsService: DogBreedsServing {
     private let dogBreedApiUrl = "https://dogapi.dog/api/v2/"
-    
-    
+
     func getDogBreeds() -> AnyPublisher<[DogBreed], Error> {
         let request = Endpoint<DogBreedsListDTO>(baseURL: dogBreedApiUrl)
             .appendingPathParameter("breeds")
